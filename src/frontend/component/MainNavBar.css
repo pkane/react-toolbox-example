@@ -1,0 +1,26 @@
+* {
+  color: #000;
+}
+.appBar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 2px 4px 0 rgba(87, 71, 81, 0.2) !important;
+}
+.appBar div:first-child {
+}
+.appBar svg {
+  width: 3.4rem;
+  height: 3.4rem;
+  margin-right: 1rem;
+  fill: orange;
+}
+.appBar h1 {
+	text-align: center;
+	font-weight: normal;
+}
+.appBar link {
+	order: 1;
+}
