@@ -8,8 +8,7 @@
 	width: 100%;
 	background-color: #fff;
 	box-shadow: 0 2px 4px 0 rgba(87, 71, 81, 0.2) !important;
-}
-.appBar div:first-child {
+	z-index: 100;
 }
 .appBar svg {
   width: 3.4rem;
@@ -23,4 +22,8 @@
 }
 .appBar link {
 	order: 1;
+}
+.appBar svg {
+	width: 1.7em;
+	height: 1.7em;
 }

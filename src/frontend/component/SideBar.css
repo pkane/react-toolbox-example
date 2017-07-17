@@ -2,7 +2,22 @@
 	position: fixed;
     right: 0;
     width: 350px;
+    height: 100%;
     z-index: 100;
     background: #f2f3f5;
     top: 64px;
+    transform: translateX(0);
+    transition: transform 300ms ease-out;
+}
+.sideBar.active {
+	transform: translateX(0);
+}
+.sideBar.inactive {
+    transform: translatex(350px);
+}
+.sideBar p {
+	margin: 2em 1em;
+}
+.sideBar .toggleButtonContainer {
+	text-align: center;
 }

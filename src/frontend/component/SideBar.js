@@ -18,6 +18,10 @@ export default class SideBar extends React.Component {
 	renderCardContent(project) {
 		if (!project) return;
 
+		if (!project.title) return (
+			<p>Select a project from the dashboard to view details.</p>
+		)
+
 		return (
 			<List selectable ripple>
 				<ListSubHeader caption='Project Details' />
@@ -34,20 +38,22 @@ export default class SideBar extends React.Component {
 
 		return (
 
-			<div className={styles.sideBar}>
+			<div className={styles.sideBar + ' ' + (this.state.active ? styles.active : styles.inactive)}>
 			  	<AppBar title="AppBar">
 			  	</AppBar>
+
 			  	{this.renderCardContent(this.props.project)}
-				<Button
-					label="Close Drawer"
-					onClick={this.handleToggle}
-				/>
+			  	<div className={styles.toggleButtonContainer}>
+					<Button className={styles.toggleButton}
+						label="Close Drawer"
+						onClick={this.handleToggle.bind(this)}
+					/>
+				</div>
 			</div>
 		);
 	}
 }
 
 SideBar.propTypes = {
-    active: React.PropTypes.bool.isRequired,
     project: React.PropTypes.object
 };

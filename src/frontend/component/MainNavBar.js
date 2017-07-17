@@ -6,7 +6,6 @@ import theme from './MainNavBar.css';
 
 const MainNavBar = ({ children, ...other }, props) => (
   <AppBar {...other} theme={theme} leftIcon={<Logo />} >
-    <Link href='http://' label='Dashboard' style={{text_align: 'left'}} />
     <h1>{props.title}</h1>
   </AppBar>
 );

@@ -1,3 +1,9 @@
+* {
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+a {
+	cursor: pointer;
+}
 .dashboardWrapper {
 	padding: 60px 120px;
     background-image: linear-gradient(transparent 0px, transparent 2px, rgb(255, 255, 255) 2px, rgb(255, 255, 255) 20px), linear-gradient(to right, rgb(200, 195, 199) 0px, rgb(200, 195, 199) 2px, rgb(255, 255, 255) 2px, rgb(255, 255, 255) 20px);
@@ -5,19 +11,39 @@
     background-size: 20px 20px;
 }
 .dashboardHeader {
-	width: 1477px;
+	width: 100%;
 	height: 70px;
 	background-image: linear-gradient(to left, #ffffff, #f2f3f5);
 }
 .dashboard {
-	width: 1477px;
+	width: 100%;
 	height: 983px;
 	background-image: linear-gradient(to left, #fcf5f5, #f0f2ff);
 	border: 1px solid #bbb;
 }
 .cardList {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 0 115px;
+    padding: 25px 75px 0;
+}
+.placeholderCard {
+	width: 215px;
+	min-height: 225px;
+	margin: 0 30px 30px 0;
+	padding: 20px;
+	border-radius: 2px;
+	background-color: #ffffff;
+	box-shadow: 0 2px 4px 0 rgba(87, 71, 81, 0.2);
+}
+.placeholderCard:hover {
+	cursor: pointer;
+}
+.placeholderCardTitle {
+    font-size: 20px;
+    text-align: center;
+    color: #5d5d5d;
+    margin: 0 auto;
+    margin-top: 20px;
 }
